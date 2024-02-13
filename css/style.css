@@ -1,0 +1,20 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Para centralizar verticalmente o conteúdo */
+    margin-top: 50px; /* Ajuste conforme necessário para centralizar verticalmente */
+}
+
+.search-input {
+    padding: 5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    flex: 1;
+}
+
+input[type="submit"] {
+    margin-left: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
