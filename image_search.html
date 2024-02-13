@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Image Search</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+        }
+        header {
+          background-color: #f2f2f2; /* Example background color */
+          padding: 10px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        main {
+          flex-grow: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Google Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="tbm" value="isch" hidden>
+            <input type="text" name="q" placeholder="Search Google Images" required>
+            <input type="submit" value="Google Image Search">
+        </form>
+    </main>
+</body>
+</html>
